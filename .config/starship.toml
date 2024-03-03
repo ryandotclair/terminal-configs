@@ -1,7 +1,7 @@
 #format = """
 #[╭─user───❯](bold blue) $username
 #[┣─system─❯](bold yellow) $hostname
-#[┣─project❯](bold red) $directory$rust$git_branch$git_status$package$golang$terraform$docker_context$python$docker_context$nodejs
+#[┣─project❯](bold red) $directory$git_branch$git_status$package$golang$terraform$python$docker_context
 #[╰─cmd────❯](bold green) 
 #"""
 [username]
