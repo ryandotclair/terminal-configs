@@ -1,6 +1,8 @@
 
 # https://medium.com/macoclock/5-must-have-key-mappings-on-iterm2-to-be-more-productive-21c4daf56348
 USER="ryanc"
+EMAIL="ryan.clair@gmail.com"
+NAME="Ryan"
 cp .zshrc ~
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo >> /Users/$USER/.zprofile
@@ -13,3 +15,5 @@ cp -r .config ~
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 brew install pyenv-virtualenv
 jump shell
+git config --global user.email $EMAIL
+git config --global user.name $NAME
