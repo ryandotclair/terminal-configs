@@ -1,9 +1,7 @@
-#format = """
-#[╭─user───❯](bold blue) $username
-#[┣─system─❯](bold yellow) $hostname
-#[┣─project❯](bold red) $directory$git_branch$git_status$package$golang$terraform$python$docker_context
-#[╰─cmd────❯](bold green) 
-#"""
+format = """
+$username$hostname$directory$git_branch$git_status$package$golang$terraform$python$docker_context$time
+$character
+"""
 [username]
 style_user = "green bold"
 style_root = "red bold"
@@ -81,5 +79,10 @@ version_format = "v${raw}"
 [sudo]
 disabled = false
 
-#[kubernetes]
-#disabled = false
+[kubernetes]
+disabled = false
+
+[time]
+disabled = false
+format = ' @ [$time]($style) '
+use_12hr = true
