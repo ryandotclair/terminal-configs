@@ -9,7 +9,9 @@ echo >> /Users/$USER/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-brew install zsh starship zsh-syntax-highlighting jump docker noti openssl readline sqlite3 xz zlib
+cd config
+brew install $(cat brew_packages.txt)
+cd ..
 curl https://pyenv.run | bash
 cp -r .config ~
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
