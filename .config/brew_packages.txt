@@ -11,7 +11,6 @@ coreutils
 dive
 docker
 docker-completion
-func
 gettext
 gh
 gmp
@@ -25,7 +24,6 @@ jump
 kapp
 kind
 kn
-kp
 kubectx
 kubernetes-cli
 libassuan
@@ -67,7 +65,7 @@ ruby
 sqlite
 starship
 syft
-terraform
+tofu
 tree
 unbound
 watch
