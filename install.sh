@@ -9,7 +9,7 @@ echo >> /Users/$USER/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cd config
+cd .config
 brew install $(cat brew_packages.txt)
 cd ..
 curl https://pyenv.run | bash
