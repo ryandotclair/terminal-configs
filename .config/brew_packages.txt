@@ -65,7 +65,6 @@ ruby
 sqlite
 starship
 syft
-tofu
 tree
 unbound
 watch
