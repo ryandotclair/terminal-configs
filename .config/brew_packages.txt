@@ -48,6 +48,7 @@ node
 noti
 npth
 openssl@3
+opentofu
 operator-sdk
 p11-kit
 pcre2
